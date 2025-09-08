@@ -5,28 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>charity: water | College Advocates</title>
   <!-- Import Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href=body { font-family: Proxima Nova, Avenir Next Arabic; } rel="stylesheet">
   <style>
     :root {
-      --brand-primary: #3cb4e7;
-      --brand-secondary: #ffd34e;
-      --brand-accent: #ff7a59;
-      --text-dark: #222;
-      --text-light: #fff;
-      --bg-light: #f9f9f9;
+      --brand-primary: #ffc907;
+      --brand-secondary: #77abb7;
+      --brand-accent: #cbccd1;
+      --text-dark: #fff7e1;
+      --text-light: #1a1a1a;
+      --bg-light: #ffc907;
     }
 
     body {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
+      font-family: Proxima Nova, Avenir Next Arabic;
       line-height: 1.6;
-      color: var(--text-dark);
-      background-color: var(--bg-light);
+      color: var(--text-light);
+      background-color: var(--text-dark);
     }
 
     header {
-      background: linear-gradient(to right, var(--brand-primary), var(--brand-secondary));
-      color: var(--text-light);
+      background: #003366 
+      color: white
       padding: 80px 20px;
       text-align: center;
     }
@@ -46,16 +46,16 @@
     .button {
       display: inline-block;
       padding: 14px 30px;
-      background: var(--brand-accent);
-      color: var(--text-light);
+      background: var(#ffc907);
+      color: var(#ffc907);
       text-decoration: none;
       border-radius: 30px;
       font-weight: 600;
       transition: background 0.3s ease;
     }
 
-    .button:hover {
-      background: #e56a4d;
+    .button {
+      background: #003366;
     }
 
     section.features {
@@ -120,28 +120,56 @@
       padding: 25px;
       font-size: 0.9em;
     }
+    /* For tablets and smaller */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+  section.features {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* For phones */
+@media (max-width: 480px) {
+  header {
+    padding: 40px 10px;
+  }
+  header h1 {
+    font-size: 1.8em;
+  }
+  .feature {
+    max-width: 90%;
+  }
+  section.story img,
+  .feature img {
+    max-width: 100%;
+  }
+}
   </style>
 </head>
 <body>
   <header>
-    <h1>Join charity: water College Advocates</h1>
-    <p>Together, students can bring clean and safe water to communities in need worldwide.</p>
+    <img src="img./logo.png" alt="Charity: Water Logo" class="logo" />
+    <h1>be: the generation that ends the water crisis.</h1>
+    <p>millions of people live without clean water. together, college students can change that—one project, one community at a time.</p>
     <a href="#signup" class="button">Get Involved</a>
   </header>
 
   <section class="features">
     <div class="feature">
-      <img src="https://via.placeholder.com/320x220" alt="Campus Campaigns" />
+      <img src="img./image (1).png" alt="bring smiles to peple around the world" />
       <h3>Campus Campaigns</h3>
       <p>Lead fundraising events at your college and inspire peers to make a global impact.</p>
     </div>
     <div class="feature">
-      <img src="https://via.placeholder.com/320x220" alt="Student Stories" />
+      <img src="img./image (2).png" alt="spread awareness" />
       <h3>Student Stories</h3>
       <p>Hear from other students who are creating change and learn how you can do the same.</p>
     </div>
     <div class="feature">
-      <img src="https://via.placeholder.com/320x220" alt="Global Connection" />
+      <img src="img./image.png" alt="feel the difference" />
       <h3>Global Connection</h3>
       <p>See how your advocacy connects directly to clean water projects across the world.</p>
     </div>
